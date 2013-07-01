@@ -12,7 +12,7 @@ class Metatitle extends \System
 
 	public function setMetatitle($obj, $objArticles, $objTemplate)
 	{
-		if(strpos(get_class($obj), 'News4ward\Module\Listing') === false) return;
+		if(strpos(get_class($obj), 'News4ward\Module\Reader') === false) return;
 		$GLOBALS['objPage']->pageTitle = $objArticles->metatitle;
 	}
 }
