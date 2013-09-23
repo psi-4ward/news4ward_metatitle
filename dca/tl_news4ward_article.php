@@ -15,4 +15,5 @@ $GLOBALS['TL_DCA']['tl_news4ward_article']['fields']['metatitle'] = array
 	'sql'		=> "varchar(255) NOT NULL default ''"
 );
 
-$GLOBALS['TL_DCA']['tl_news4ward_article']['palettes']['default'] = str_replace('title','title,metatitle', $GLOBALS['TL_DCA']['tl_news4ward_article']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_news4ward_article']['fields']['description']['eval']['tl_class'] = 'clr';
+$GLOBALS['TL_DCA']['tl_news4ward_article']['palettes']['default'] = str_replace('description','metatitle,description', $GLOBALS['TL_DCA']['tl_news4ward_article']['palettes']['default']);
