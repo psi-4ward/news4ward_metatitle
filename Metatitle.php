@@ -10,9 +10,9 @@ namespace Psi\News4ward;
 class Metatitle extends \System
 {
 
-	public function setMetatitle($obj, $objArticles, $objTemplate)
+	public function setMetatitle($obj, $article, $objTemplate)
 	{
 		if(strpos(get_class($obj), 'News4ward\Module\Reader') === false) return;
-		$GLOBALS['objPage']->pageTitle = $objArticles->metatitle;
+		$GLOBALS['objPage']->pageTitle = $article['metatitle'];
 	}
 }
